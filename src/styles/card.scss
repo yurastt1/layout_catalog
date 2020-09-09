@@ -17,6 +17,16 @@
     width: 160px;
     height: 134px;
     margin: 0 auto 45px;
+
+    outline: 3px solid transparent;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      outline: 3px solid #f3f3f3;
+      
+      
+    }
   }
 
   &__description {
@@ -68,6 +78,7 @@
       color: $colorLightBlue;
       background: #fff;
       border: 1px solid $colorLightBlue;
+
     }
   }
 }
