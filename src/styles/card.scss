@@ -16,20 +16,18 @@
   &__img {
     width: 160px;
     min-height: 134px;
-    margin: 1px auto 30px;
+    margin: 0 auto 30px;
     
     box-sizing: unset;
-    padding-top: 14px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
-    outline: 3px solid transparent;
+    border: 3px solid transparent;
     transition: transform 1s;
 
     &:hover {
       transform: scale(1.2, 1.2);
-      outline: 3px solid #f3f3f3;
-      
-
+      border: 3px solid #f3f3f3;
     }
   }
 
@@ -82,7 +80,6 @@
       color: $colorLightBlue;
       background: #fff;
       border: 1px solid $colorLightBlue;
-
     }
   }
 }
