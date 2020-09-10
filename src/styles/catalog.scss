@@ -3,9 +3,18 @@
   grid-template-columns: repeat(4, 200px);
   justify-content: center;
   column-gap: $columnGap;
-  
-  max-width: $cardsPerColumn * $cardWidth
-    + ($cardsPerColumn - 1) * $columnGap;
+
+  @media (max-width: ($cardWidth + $rowGap) * 4) {
+    grid-template-columns: repeat(3, $cardWidth);
+  }
+
+  @media (max-width: ($cardWidth + $rowGap) * 3) {
+    grid-template-columns: repeat(2, $cardWidth);
+  }
+
+  @media (max-width: ($cardWidth + $rowGap) * 2) {
+    grid-template-columns: $cardWidth;
+  }
 
   &__card {
     margin-bottom: $rowGap;
