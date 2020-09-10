@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: repeat(4, 200px);
   justify-content: center;
-  column-gap: 48px;
   
+  column-gap: $columnGap;
   max-width: $cardsPerColumn * $cardWidth
     + ($cardsPerColumn - 1) * $columnGap;
 
